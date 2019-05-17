@@ -1,0 +1,7 @@
+<aside>
+  <div class="list-group">
+    <a href="#" class="list-group-item" *ngFor="let person of people | filter:searchText; index as i" 
+    [class.active]="active[i]"
+    (click)="onSelect(person, i)">{{person.name}}</a>
+  </div>
+</aside>

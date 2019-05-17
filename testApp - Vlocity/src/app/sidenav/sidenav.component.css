@@ -1,0 +1,19 @@
+.list-group-item:last-child, .list-group-item:first-child{
+    border-radius: 0;
+}
+/* aside{
+    border-right: 1px solid #ccc;
+    height: 100%;
+} */
+a:hover{
+    text-decoration: none;
+}
+.list-group-item{
+    color:#333;
+}
+.list-group-item.active, .list-group-item:active, .list-group-item:hover{
+    background: #ddd;
+    color: #000;
+    transition: .3s;
+    border: 1px solid #bbb;
+}

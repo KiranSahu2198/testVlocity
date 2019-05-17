@@ -1,0 +1,11 @@
+<header class="container-fluid">
+  <a routerLink="/" class="logo col">LoGo</a>
+  <form class="form-inline" class="col-6">
+    <input class="form-control mr-sm-2" type="search" (ngModelChange)="OnSearch($event);"
+    placeholder="Search" aria-label="Search" [(ngModel)] = "searchText" name="searchBox">
+    
+  </form>
+  <a href="#" class="user col">{{person?.name}}
+    <img [src]="person?.img" alt="" class="rounded-circle">
+  </a>
+</header>

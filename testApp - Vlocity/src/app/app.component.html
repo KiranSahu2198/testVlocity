@@ -1,0 +1,6 @@
+<app-header class="row" [personData]="selected" (searchEvent)="searchText = $event"></app-header>
+<div class="row">
+  <app-sidenav class="col-2" (valueChange)="selected = $event" [searchData]="searchText"></app-sidenav>
+  <app-section class="offset-2 col-10" [personData]="selected"></app-section>
+</div>
+<router-outlet></router-outlet>

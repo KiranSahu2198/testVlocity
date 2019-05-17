@@ -1,0 +1,12 @@
+.row{
+    margin:0;
+}
+.row app-section{
+    padding: 30px 50px;
+}
+.row .col-2{
+    padding: 0px;
+    position: fixed;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}

@@ -1,0 +1,26 @@
+.btn-secondary{
+    background: #607d8b;
+}
+.rating{
+    margin-top: 10px;
+}
+.rating .fa{
+    font-size: 26px;
+    margin-right: 5px;
+    color: #ccc;
+    display: inline-block;
+}
+.rating .rated{
+    color: #E53935;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+article img{
+    height: 10rem;
+    width: 10rem;
+}
+article p{
+    margin: 20px 0; 
+}

@@ -1,0 +1,21 @@
+header{
+    background: #607d8b;
+    display: flex;
+    align-items: center;
+    padding: 6px 30px;  
+}
+header .logo{
+    color: #fff;
+    font-size: 36px;
+}
+a:hover{
+    text-decoration: none;
+}
+.user{
+    color: #fff;
+    font-size: 16px;
+    text-align: right;
+}
+.user img{
+    height: 50px;
+}

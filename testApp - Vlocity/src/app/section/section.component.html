@@ -1,0 +1,34 @@
+<article class="container">
+  <div class="row">
+    <img [src]="person?.img" alt="" class="img-thumbnail rounded">
+    <div class="col-8 info">
+      <div>
+        <button class="btn btn-secondary btn-lg">Send Message!</button>
+        <div class="rating">
+          <i class="fa fa-heart" *ngFor = "let rate of ratingList; let r = index"
+          [class.rated]="r < person?.rating"
+          aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <p>{{person?.Description}}</p>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th width="50%">Likes</th>
+                <th width="50%">Dislikes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let list of person.Likes; let l = index">
+                <td>{{person?.Likes[l]}}</td>
+                <td>{{person?.Dislikes[l]}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</article>
